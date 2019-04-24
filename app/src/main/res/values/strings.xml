@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">i-easy</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Flutter</string>
+    <string name="nav_header_subtitle">hubcarl@126.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_copy">Copy Link</string>
+    <string name="action_open_browser">Open Browser</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_about">关于</string>
+    <string name="title_activity_native">通信</string>
+</resources>

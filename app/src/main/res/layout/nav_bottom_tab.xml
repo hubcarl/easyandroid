@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="55dp"
+              android:layout_below="@id/container"
+              android:gravity="center"
+              android:layout_marginBottom="0dp"
+              android:layout_gravity="bottom"
+              android:background="@color/colorBackground"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:tag = "0"
+        android:id="@+id/layout_tab_home"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:tag="0"
+            android:id="@+id/btn_tab_home"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tab_home_normal"
+            android:background="#00000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"
+            android:text="Home"/>
+    </LinearLayout>
+    <LinearLayout
+        android:tag = "1"
+        android:id="@+id/layout_tab_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:tag = "1"
+            android:id="@+id/btn_tab_category"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tab_category_normal"
+            android:background="#00000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"
+            android:text="GitHub"/>
+    </LinearLayout>
+    <LinearLayout
+        android:tag = "2"
+        android:id="@+id/layout_tab_find"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:tag = "2"
+            android:id="@+id/btn_tab_find"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tab_find_normal"
+            android:background="#00000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"
+            android:text="Document"/>
+    </LinearLayout>
+    <LinearLayout
+        android:tag = "3"
+        android:id="@+id/layout_tab_setting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:tag = "3"
+            android:id="@+id/btn_tab_setting"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tab_setting_normal"
+            android:background="#00000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"
+            android:text="Profile"/>
+    </LinearLayout>
+
+</LinearLayout>
