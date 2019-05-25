@@ -67,7 +67,7 @@ public class NativeFlutterFragment extends Fragment {
     }
 
     protected void registerMethodChannel(FlutterView flutterView) {
-        new MethodChannel(flutterView, "com.happy/navigation").setMethodCallHandler(
+        new MethodChannel(flutterView, "com.easy/navigation").setMethodCallHandler(
                 new MethodChannel.MethodCallHandler() {
                     @Override
                     public void onMethodCall(MethodCall call, MethodChannel.Result result) {
