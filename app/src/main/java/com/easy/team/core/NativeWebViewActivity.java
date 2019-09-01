@@ -78,8 +78,13 @@ public class NativeWebViewActivity extends EasyNativeActivity {
                 }
             }
         });
-        web.setWebViewClient(new EasyWebViewClient());
+        web.setWebViewClient(new EasyWebViewClient(this));
         web.loadUrl(url);
+    }
+
+    public void updateTitleAndUrl(String title, String url) {
+        this.title = title;
+        this.url = url;
     }
 
     @Override

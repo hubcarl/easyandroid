@@ -8,7 +8,7 @@ import android.util.Log;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static String name = "easy_data";
-    private static Integer version = 1;
+    private static Integer version = 2;
 
 
     public DatabaseHelper(Context context) {
@@ -18,12 +18,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "create table easy_favorite(id integer primary key autoincrement, title varchar(256), url varchar(1024), status integer, createtime datetime)";
+        String sql = "create table IF NOT EXISTS easy_favorite(id integer primary key autoincrement, title varchar(256), url varchar(1024), status integer, createtime datetime)";
         db.execSQL(sql);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        if (newVersion != oldVersion) {
+            this.onCreate(db);
+        }
     }
 }

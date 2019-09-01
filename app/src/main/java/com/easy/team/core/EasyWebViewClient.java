@@ -8,6 +8,14 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class EasyWebViewClient extends WebViewClient {
+
+    private NativeWebViewActivity nativeWebViewActivity;
+
+    EasyWebViewClient(NativeWebViewActivity nativeWebViewActivity) {
+        super();
+        this.nativeWebViewActivity = nativeWebViewActivity;
+    }
+
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
         return false;
@@ -17,6 +25,7 @@ public class EasyWebViewClient extends WebViewClient {
     public void onPageStarted(WebView view, String url, Bitmap favicon) {
         super.onPageStarted(view, url, favicon);
         Log.d("--onPageStarted--", url + " " + view.getTitle());
+        this.nativeWebViewActivity.updateTitleAndUrl(view.getTitle(), url);
     }
 
     @Override
